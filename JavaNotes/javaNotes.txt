@@ -1,0 +1,963 @@
+Keywords:- Keywords are reserve words whose meaning is already defined in compiler. In java there are 50 keywords.
+
+Package:- Package is the container of classes, interfaces and sub packages.
+          e.g. 
+               java.util, java.sql, java.lang, java.io etc.
+
+
+
+Class:- Class is a blueprint of object. Class is the collection of objects which have common properties and behaviors. Class is a
+        collection of properties(variables) and behaviors(methods) of objects.
+
+
+        class class_name
+ 
+        {
+
+            //variables
+            //methods
+
+
+         }
+
+
+
+
+
+Objects:- Objects is the real world entities.
+
+Creating object:- class_name variablename = new class_name();
+
+
+How to create program in java? :-
+
+
+--> Select editor e.g. Notepad, Notepad++ etc.
+--> Put java code in a file.
+--> Save file with .java extension.
+--> Compile java program.
+  
+     javac filename.java
+
+    e.g. 
+          javac p1.java
+
+
+--> Run java program.
+
+    java class_name(classname of main() method class)
+
+
+
+Comment in java:-
+
+1. Single line comment.
+ 
+   e.g.
+
+   //single line comment
+
+
+
+2. Multiline comment
+
+   e.g.
+
+   /* 
+      multiline comment 
+
+   */
+
+
+First Program in java:-
+
+
+//WAP to print a message on screen
+
+
+class p1
+
+{
+
+public static void main(Strig[] args)
+
+{
+
+System.out.println("Happy Learning")
+
+}
+
+
+
+}
+
+
+How to take input from user in java? :- 
+
+Package to be used :-
+
+import java.util.Scanner;
+
+Scanner s=new Scanner(System.in);
+
+   int a;                float b;                 double c;
+
+a=s.nextInt();      b=s.nextFloat();           c=s.nextDouble();
+
+_____________________________________________________________________________________________________________________________________
+
+Naming Convention in java:- 
+
+1. Naming Convention for class and interface:- In Java class name and interface name is started with capital letter, and if 
+                                               next word is added then first letter of next word will also be capital.
+
+
+e.g. Scanner, String, BufferedReader, NullPointerException, ArrayIndexOutOfBoundsException 
+
+
+2. Naming convention for method:- In Java, method name is started with small letter and if next word is added then first 
+                                  letter of next word will be capital.
+
+e.g. next(), nextInt(), nextDoubles(), equalsIgnoreCase().
+
+_____________________________________________________________________________________________________________________________________
+
+
+Operators:- Operators are symbols which are used to perform operation on operands.
+
+1. Arithmetic Operators:- 
+
+
++ Addition
+- Subtraction
+* Multiplication
+/ Division
+% Modulo (Remainder collector)
+
+
+2. Relationals Operators:- Relation Operators are used to specify relationship b/w two entities.
+
+<  Greater than
+>  Less than
+<= Greater than or equal to
+>= Less than or equal to
+== a==b, a equality b.
+!= a!=b, a not equal b.
+
+3. Assignment Operator:-
+
+a=b;  // it copies value of b into a 
+
+
+
+4. Increment Operator(++):-
+
+a++; // a=a+1 it increases the value of variable by 1
+
+5. Decrement Operator:-
+
+a--; // a=a-1 
+
+6. Logical Operator:- Logical operators are used to combine conditions.
+
+AND    &&      
+OR     ||
+NOT    !
+
+
+
+
+_____________________________________________________________________________________________________________________________________
+
+
+Decision Controls:- Decision controls are used for decision making. If you want to execut code based on some condition then you 
+                    can use the decision control.
+
+
+1. if statement
+2. if-else statement
+3. ladder if-else statement
+4. switch statement
+
+if statement:- if is a keyword which works as decision control. We attach a condition with if statement if given condition is true
+                then code will executed, and if given condition is false then code will not executed.
+
+
+Syntax:-
+
+if(condition)
+{
+//code
+}
+
+
+if-else statement:- if-else is variation of if statment, we attach a condition with if statement. If given condition is true then if
+                    block code will executed and if given condition is false then else block code will execute.
+
+
+Syntax:-
+
+if(condition)
+{
+//code
+}
+else
+{
+//code
+}
+
+
+Ladder if-else :-If you have many conditions and you want to execute code based on those conditions then you can use ladder if-else.
+
+Syntax:-
+
+if(Condition1)
+{
+//code1
+}
+else if(Condition2)
+{
+//code2
+}
+else
+{
+//code3
+}
+
+
+
+Switch Statement:- Switch is a keyword which works as case control. It is used to create a manu based program.
+
+Syntax:-
+
+switch(expression) // int or char or String
+{
+case 1: //code1;
+break; 
+
+case 2: //code2;
+break;
+
+case 3: //code3;
+break;
+
+default : //code4;
+
+}
+
+____________________________________________________________________________________________________________________________________
+
+
+Loop Controls:- If you have a block of code which you want to execute repeatedly up to given condition is true then you can use a
+                loop control. In java there are four types of loop controls.
+
+Types of loop control...
+
+1. while loop
+2. for loop 
+3. do while loop
+4. for each loop
+
+while:- while is a keyword which works as loop control.
+
+Syntax:- 
+
+Initialization of loop counter;
+
+while(condition)
+{
+//code;
+Updation of loop counter;
+}
+
+e.g.
+
+int c;
+c=1;
+while(c<=5)
+{
+System.out.println(c);
+c++;
+}
+
+
+
+for:- For is a keyword which works as loop control. The working for loop is same as while loop, but syntax is different.
+
+Syntax:-
+
+for(Initialization;Condition;Updation)
+{
+//code;
+}
+
+
+do-while:- do-while loop is a loop control. In do-while loop condition is tested after excution of code.
+           In while and for loop condition is tested before execution of code, so while and for loop are known as entry control loop.
+           In do while loop condition is tested after execution of code so do-while loop is known as exit control loop.
+
+Syntax:-
+
+
+Initialization of loop counter;
+
+do 
+{
+//code;
+updation of loop counter;
+}
+while(condition);
+
+e.g.
+
+
+for each loop:- for each loop in java is used to traverse elements of a collection like array.
+
+e.g.  
+
+for(String n : name)
+{
+System.out.println(n);
+}
+
+
+
+______________________________________________________________________________________________________________________________________
+ 
+
+Concept of ARRAY in java:- Array is the collection of elements having similar datatype. That means an arry can store miltiple values of 
+                           similar datatype. Array in java is used as an object. Array is a class available in java.util package.
+
+
+Declaration of Array:-
+
+1. data_type [] arry_name = new date_type[size]; // (Declaration & Instantiation of array)
+2. data_type [] array_name // Declaration of array
+3. array_name = new data_type[size]; // instantiation of array mean allocation of memory to the array variable.
+
+
+e.g.
+
+int []x = new int[10];  or  int x[] = new int[10];
+
+
+Initialization of ARRAY:-
+ 
+
+int []x = {10,20,30,40,50}; or int x[] = {10,20,30,40,50};
+
+x[0]=10;
+x[1]=20;
+x[2]=30;
+x[3]=40;
+x[4]=50;
+
+Taking input for an array in java:-
+
+
+Code Segment:-
+
+int []x=new int[5];
+Scanner s=new Scanner(System.in);
+System.out.print("Enter five no. in array");
+for(int i=0;i<5;i++)
+{
+x[i]=s.nextInt();
+}
+for(int j=0;j<5;j++)
+{
+System.out.println(x[i]);
+}
+
+
+
+_____________________________________________________________________________________________________________________________________
+
+
+String :- Technically String is a sequance of characters. In java String is a class available in java.lang package.
+
+toUpperCase():- toUpperCase() method of String class converts string into upper case.
+
+toLowerCase():- toLowerCare() method of string class converts string into lower case.
+
+length():- length() method of string class find length of string.
+
+equals():- equals() method of string class is used to compare two strings for equality. This method returns boolean value.
+
+equalsIgnoreCase():- It is used to compare two strings for equality. This method also return boolean value. This method avoid case 
+                     sensitivity.
+
+split():- It is used to split string into substrings. This method return array of string.
+
+
+length:- It is the property of array, which counts elements of array.
+
+replace():- replace method of string class is used to replace one string with another string in given string.
+
+
+
+
+
+_____________________________________________________________________________________________________________________________________
+
+
+Method :- Mathod is a block of code which perform specific task. 
+
+Why we use method? :- If you have a block of code which required at different location of program. Then you can create a method of
+                      that code and call it from desired location. By using method you can avoid to write same code over and over.
+
+How to create method in java? :-
+
+Syntax:- 
+
+Modifier Return_Type Method_Name(Parameters)
+{
+//code;
+}  
+
+e.g.
+
+public int add( int x, int y)
+{
+return(x+y);
+}
+
+Types of methods in java:- 
+
+In java there are two types of methods:-
+
+1. static methods:- static methods are created using static modifier. Static methods are also called class method. There is no 
+   need of object to call static method.
+
+e.g. 
+static int add(int x, int y)
+{
+   return(x+y);
+}
+2. Non-static methods:- non-static methods are created without using static modifier. Non-static methods are call by using object.
+
+e.g.
+int greatest(int x, int y)
+{
+return(x>y)?x:y;
+}
+
+Note:- You can create a method inside class and outside main() method. 
+
+
+_____________________________________________________________________________________________________________________________________
+
+
+Object Orientem Programming System (OOPS) :- OOPS stands for Object Oriented Programmin System. It is a mechanism of software
+                                             development. 
+
+OOPS has four pillars:-
+
+1. Abstraction   :- Abstraction is a mechanism to show only essential functionalies and hide all othe functionalities of an object.
+2. Encapsulation :- Wrapping of properties and functionality in a single unit is called encapsulation. And that single unit is 
+                    called object.
+3. Inheritance   :- Inheritance is a very important pillar of OOP. In inheritance you can create a new product by 
+                    using existing product. 
+4. Polymorphism  :- The term polymorphism means one thig many forms.
+
+
+Note  :- Any programming language which follows these pillars is called object oriented programming language.
+
+Object:- Object is a real world entity which has its properties and functionality.
+
+Class :- Class is a blueprint of object. Class is container of variables and methods. Class is created by using 'class' keyword 
+         followed by class name. Body of class is enclosed within braces. Within body of class we create variables and methods.
+
+Syntax to create class:- 
+
+class class_name
+{
+// variables and methods;
+}
+
+e.g.
+
+class MyClass{
+public void sayHello(){
+System.out.e
+println("Hello World");
+}
+}
+class ClassDemo1{
+public static void main(String[]args){
+MyClass m=new MyClass();
+m.sayHello();
+}
+}
+
+
+______________________________________________________________________________________________________________________________________
+
+Types of variables in java:- 
+
+There are four types of variables in java:-
+
+1. Static variables   :- Static variables are created by using static modifier inside class and outside of method.
+2. Non-static variable:- Non-static variables are creates inside class and outside of method. These variables are also called 
+                         instance variable.
+3. Local variables    :- Local variables are created inside method.
+4. Parameters         :- Parameters are variables, which created inside method head.
+
+
+_____________________________________________________________________________________________________________________________________
+
+Concept of Inheritance in java:- Inheritance is a feature of OOP. In inheritance we can create a new class by using existing class.
+                                 The existing class is called base/parent/super class. And new created class is called derived/child
+                                 /sub class.
+
+Note:- Inheritance is used to achieve 'Reusability'.
+
+e.g.
+
+class A
+
+{
+// variables & methods;
+}
+class B extends A
+{
+// variables & methods;
+}
+
+
+Types of inhritance in java:- There are three types of inheritance are supported in java.
+
+1. Single inheritance       :-  In single inheritance there is a single base class and single derived class.
+
+e.g.
+
+class A
+{
+// variables & methods;
+}
+class B extends A
+{
+// variables & methods;
+}
+
+   
+2. Hierarchical inheritance :-  In hierarchical inheritance there is a single base class and multiple derived classes.
+
+e.g.
+
+class A
+{
+// variables & methods;
+}
+class B extends A
+{
+// variables & methods;
+}
+class C extends A
+{
+// variables & methods;
+}
+
+
+3. Multi-level inheritance  :-  In multi-level inheritance there is multiple base classes and multiple derived classes.
+
+e.g.
+
+
+class A
+{
+// variables & methods;
+}
+class B extends A
+{
+// variables & methods;
+}
+class C extends B
+{
+// variables & methods;
+}
+
+______________________________________________________________________________________________________________________________________
+
+
+Method Overriding:- Re-writing of base class method into derived class is called method overriding.
+
+Overriding.
+
+class Connection {
+
+public void connecte() {
+
+// connect java application with oracle database.
+
+}
+
+}
+
+class NewConnection extends connection {
+
+public void connecte() {
+
+// connect java application with mysql database.
+
+}
+
+
+}
+
+Rules to implement method overriding:-
+
+1. Class must be inherited.
+2. Base class method name and derived class method name must be same.
+3. Base class method parameters and derived class method parameters must be same.
+4. Base class method return type and derived class method return type can be same.
+s. Base class method modifier and derived class method modifier can be same or derived class method modifier must be low 
+   precedence/previliges.
+
+
+______________________________________________________________________________________________________________________________________
+
+
+
+Exception in Java:-  Unexpected, Abnormal termination. The dictonary meaning of exception is abnormal termination. When 
+                              exception is occured then program is terminated abnormally and rest of code is not executed. 
+
+
+Types of Exception in java:-  In java programming language there are three types of exceptions:-
+
+1. Checked Exceptions:-       Checked exceptions are those exceptions which are identified by compiler at compilation time. 
+
+                  e.g. 
+
+                              ClassNotFoundException, InterruptedException, FileNotFoundException, IOException, SQLException etc.
+
+
+2. Unchecked Exceptions:-     Unchecked Exceptions are those exceptions which are occured at runtime.
+
+                     e.g.
+
+                              InputMismatchException, ArrayIndexOutOfBoundsException, NullPointerException, ArithmeticException etc.
+             
+
+
+3. Errors:-                   Errors are unchecked exceptions, errors are occured due to lack of system resources.
+
+
+Exception Handling:- Exception handling is a mechanism to handle exeption to achieve normal execution of program.
+
+
+* For exception handling in java we use try, catch, finlly, throw and throws keywords. 
+
+In java you can handle exception in two ways:-
+
+1. By using try-catch blocks
+2. By using throws keyword
+
+
+1. Exception handling by using try-catch blocks:-
+
+Syntax:-
+
+try {
+
+//code which you want to protect.
+
+}
+
+catch (ExceptionType variable) {
+
+//code which is used to handle exception.
+
+}
+
+finally  // Optional
+{
+
+//code which you want to execute always.
+
+}
+
+
+_____________________________________________________________________________________________________________________________________
+
+
+Package:- Package is container of classes, interfaces and sub-packages.
+
+Package is created by using package keyword followed by package-name.
+
+Syntax:-
+package mypack;
+public class MyUtil 
+{
+
+//variables and methods;
+
+}  
+
+CMD command to create package:- javac -d . MyUtil.java
+
+
+______________________________________________________________________________________________________________________________________
+
+
+
+Interface:- Interface is the collection of abstract methods. It is used to achieve full abstraction. Interface is created by using 
+            'interface' keyword followed by interface name. Inside body of interface we declare abstract methods.
+
+
+Syntax:-
+
+interface interface_name 
+{
+
+// abstract methods;
+
+}
+
+
+Class, Abstract Class and Interface:- 
+
+Interface:- If you have requirements but you don't know about its implementations, then you can use interface because interface
+            contain abstract methods only. 
+
+---> An interface can extends(inherit) another interface.
+---> We can't create object of interface.
+
+
+Abstract Class:- Abstract class is a class which contain abstract methods and implemented methods both, if you have requirements, 
+                 you know implementations but not complete implementations then you can use abstract class.
+
+---> An abstract class can implements interface.
+---> An abstract class can extends another abstract class.
+---> You can't create objects of abstract class.
+
+Class:- Class is a collection of implemented methods. If you have requirements and you know about full implementations
+        then you can use class because class contains implemented methods only.
+
+---> Class can implements interface.
+---> Class can extends abstract class.
+---> Class can extend another class.
+---> You can create object of class.
+
+______________________________________________________________________________________________________________________________________
+
+
+Recursion:- When a method call itself then it it called 'Recursion'.
+
+Swing:- Swing is an API(Application programming Interface, It is a bonch of packages.) in java which contain packages for 
+        GUI(Graphical User Interface) application development.
+
+Web application:- Web applications are client-server based applications. You can access web application using web browser.
+                  For web application development in java we use Servilet, JSP and JDBC technologies.
+
+Servlets:- Servlets are java programs which are used to create dynamic web pages. In servlet we inject html code inside java code.
+
+
+* Code style in HTML:-
+
+<html>
+
+<head></head>
+
+<body></body>
+
+</html>
+
+* Code style in Servlets:-
+
+out.print("<html>");
+
+out.print("<head>");
+out.print("</head>");
+
+out.print("<body>");
+out.print("</body>");
+
+out.print("</html>");
+
+
+Note:- If you are very good in java then you can use servlets.
+
+
+JSP :- JSP is an enhancement(expansion) of servlet. In JSP the whole code area is dedicated for html code.
+
+
+* Inside html code you can write or inject java code.
+
+* Code style in JSP:-
+
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+<%
+
+// this is scriptlet, here you can write java code.
+
+%>
+
+</body>
+</html>
+
+
+* What is difference between Servlet and JSP:-
+
+1. In servlet we write html code inside java code. In JSP we write java code inside html code.
+
+* Servlet --> Compile --> Execute --> Output
+
+* JSP --> Servlet --> Compile --> Execute --> Output
+
+
+* JDBC is an API(Application Programming Interface, It is a bonch of packages.), which is used to perform database manipulation 
+  with java application.
+
+Note:- If you want to connect your java application with database then you can use JDBC(Java Database Connectivity).
+
+                         
+
+_____________________________________________________________________________________________________________________________________
+
+
+JDBC:- JDBC stands for java database connectivity. It is used to connect java application with database.
+
+* Steps to connect java application with database:-
+
+1. Load database driver.
+2. Establish connection between java application and database.
+3. Prepare SQL statement.
+4. Execute SQL statement.
+5. Close the connection.
+
+* Package to be used:-
+
+  Syntax:- <%@page import="java.sql.*"%>
+
+1. Load Database Driver:-
+
+  Syntax:- 
+   
+  Class.forName("driver-name");
+
+  e.g.:-
+
+  Class.forName("com.mysql.jdbc.Driver");
+ 
+  Note:- In above line of code there is a checked exception will raised named ClassNotFoundException.
+
+2. Establish connection between java application and database:-
+
+   Syntax:-
+  
+   Connection con=DriverManager.getConnection("url","username","password");
+
+   e.g.:-
+
+   Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/empdb?characterEncoding=utf-8","root","");
+
+   Note:- In above line of code there is a checked exception named SQLException will raised. So you need to handle this checked 
+          exception.
+
+3. Prepare SQL statement:-
+
+   Syntax:- 
+
+   PreparedStatement ps=con.prepareStatement("sql-statement");
+
+  
+   /*
+
+    insert:- insert command is used to insert record into table.
+            
+            Syntax:- insert into <table_name> values(<v1>,<v2>,<v3>);
+
+            e.g.:- insert into employee values(1001,'Brijesh Mishra','Development',50000);
+
+    */
+
+4. Excecute SQL statement:-
+
+
+   Syntax:-
+
+   ps.executeUpdate(); or ps.executeQuery();
+
+
+5. Close the connection
+  
+
+   Syntax:-
+
+   con.close();
+_____________________________________________________________________________________________________________________________________
+
+   
+Expression ( <%= %> ) :- It is used to print value of java variable to html code.
+
+                  e.g. :- <%=rs.getString("empid")%>
+                                    
+
+
+_____________________________________________________________________________________________________________________________________
+
+
+                                                           --PROJECT--
+
+
+
+1. Farmer Merchant Integration (FMI) :- This project is specially designed for 'Cold Storage' automation.
+
+   * Software Development Requirements:-  
+   
+   1. UI Designing:- HTML, CSS, JavaScript, Bootstrap
+   2. Programming Language:- Java for JSP.
+   3. Database:- MySql.
+   4. IDE:- Netbeans.
+   
+   * Modules in project:-
+  
+   1. Farmer information System
+   2. Storage Management System
+   3. Booking System
+   4. Payment Module
+   5. Closing Module
+   6. Login Management System
+   7. SMS API Integration
+   8. Language Translation Integration
+   9. Map Integration
+  10. Enquiry Management System
+
+
+
+
+
+2. Online Examination Management System for Nalanda Open University:-
+
+
+   * Software Development Requirements:-  
+   
+   1. UI Designing:- HTML, CSS, JavaScript, Bootstrap
+   2. Programming Language:- Java for JSP.
+   3. Database:- MySql.
+   4. IDE:- Netbeans.
+  
+
+   * Modules in project
+   
+   1. Student Information System
+   2. Login Management System
+   3. Question Bank Module
+   4. Examination Module
+   5. Result Management Module
+   6. News and Events Management
+   7. SMS API integration
+   8. Email Integration
+   9. Enquiry Management System
+  10. Credential Management
+
+
+
+
+
