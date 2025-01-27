@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Spicy Meal</title>
+    <style>
+        #main
+        {
+        height:400px;
+        width:450px;
+        border:1px solid lightgoldenrodyellow;
+        margin:0px auto;
+        background-color:lightgoldenrodyellow;
+        box-shadow:10px 10px  20px black;
+        border-radius:15px;
+        }
+        #div2
+        {
+          height:500px;
+          //border: 1px solid lightpink;
+          //background-color: lightpink;
+        }
+        #div3
+        {
+          height: 500px;
+          background-color:white;
+        }
+        #div4
+        {
+          height: 500px;
+          background-color:antiquewhite;
+        }
+    </style>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/bootstrap.bundle.js" rel="javascript" type="text/javascript">
+
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div class="row bg-warning border border-3 border-black py-2">
+    <div class="col-sm-3 pt-4"><i class="fa-solid fa-phone"></i> Call: +91 7518477300</div>
+    <div class="col-sm-3 pt-4"><i class="fa-solid fa-envelope"></i> E-mail : mkrishnanad75@gmail.com</div>
+    <div class="col-sm-3 text-center"><a href="index.html"><img src="images/logo.png" height="70px"></a></div>
+    <div class="col-sm-3 text-end pt-3">
+      <ul class="smi">
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-google"></i></li>
+      </ul>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 px-0">
+            <nav  class="navbar navbar-expand-lg bg-body-tertiary">
+                <div id="nav" class="container-fluid bg-warning border border-3 border-danger">
+                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="70px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</U></a>
+                      </li>
+                      
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+<!--login form start-->
+<div id="div2" class=" row mt-5">
+  <div id="div3" class="col-sm-6  text-center">
+    <a href="index.html"><img src="images/logo.png"  class="rounded mx-auto d-block mt-5 p-5" alt="..."></a>
+    <p style="font-size:x-large; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><b><span style="color:red;">'The Spicy Meal'</span> provides you the taste of life. </b></p>
+  </div>
+  <div id="div4" class="col-sm-6">
+    <div id="main" class="mt-5">
+      <h5 class="text-center m-3">USER LOGIN</h5>
+      <form>
+          <div class="row p-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your email">
+            </div>
+          </div>
+          <div class="row p-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Enter password">
+            </div>
+          </div>
+         
+          <div class="row p-3">
+            <div class="col-sm-10 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Stay signed In
+                </label>
+                <br>
+                <a href="register.html" class="text-body-secondary"><b>Register?</b></a>
+              </div>
+            </div>
+          </div>
+          <div class="d-grid gap-2 m-3">
+              <button class="btn btn-warning" type="submit">Login</button>
+            </div>
+        </form>
+  </div>
+  </div>
+
+</div>
+<!--login form end-->
+    <!--Footer start-->
+    <div class="row bg-dark footer mt-5">
+      <div class="coi-sm-12 text-center text-light mt-5">
+        <img src="images/logo.png">
+          <h2>About Us</h2>
+          <small>Footers are located in the margin area at the bottom of a page. Headers and footers<br> generally 
+            contain document information,<br> such as the file name, author, date created,<br> page numbering and 
+            the like. This information is <br>repeated on each page and thus enables the reader to 
+            easily navigate the document.</small>
+            <p><i class="text-warning">&copy; copyright</i> 2023-24 all rights are reserved, <i class="text-warning">designed and developed by Krishnanand Mishra</i></p>
+      </div>
+    </div>
+    <!--Footer end-->
+    </div>
+  </body>
+</html>
