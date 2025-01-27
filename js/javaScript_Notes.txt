@@ -1,0 +1,52 @@
+* JS:- It stands for javaScript. It is a clinent side scripting language.
+
+* It is an OBPL
+
+* Types of objects :-
+
+1. BOM (browser object model) - window.
+2. DOM (document object model) - document.
+
+* First name of java - Mocha
+
+* Scond name of java - Live Script
+
+* Final name of java - javaScript
+
+* Father of JS: Sir Brendon Eich (Company:Netscape)
+
+* First browser - Netscape Navigator
+ 
+______________________________________________________________________________________________________________________________________
+
+
+* Javascript is used to create validations.
+
+* To execute the javascript code, we must need to create an event.
+
+
+______________________________________________________________________________________________________________________________________
+
+* Validation:-
+
+
+______________________________________________________________________________________________________________________________________
+
+
+* Pattern Validation: 
+
+  var pname=/^[A-Za-z ]{3,7}$/;
+
+  var pmobile=/^[0-9]{10}$/;
+
+  var pemail=/^[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,4}$/;
+    
+
+  /^ - start
+
+  $/ - end
+
+  [] - kya kya allow krna hai
+
+  {} - kitna kitna allow krna hai
+

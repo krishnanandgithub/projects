@@ -1,0 +1,37 @@
+<html>
+<head>
+<script>
+//WAP to add two no.
+function add()
+{
+
+//window.alert("hii");
+var a=document.getElementById("f").value;
+//window.alert(a);
+var b=document.getElementById("s").value;
+//window.alert(b);
+var c=parseInt(a)+parseInt(b);
+//alert("Sum="+c);
+//document.write("Sum="+c);
+document.getElementById("h").innerHTML=c;
+document.getElementById("res").value=c;
+
+}
+</script>
+</head>
+<body>
+Enter first no. :
+<input type="text" id="f">
+<br>
+Enter second no. :
+<input type="text" id="s">
+<br>
+<input type="button" value="Add" onclick="add()">
+<br>
+<br>
+<b>Result : </b>
+<b id="h"></b>
+<br><br>
+<input type="text" id="res">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function check()
+{
+//alert("hii");
+var n=document.getElementById("a").value;
+if(n.length==10)
+{
+//alert("ok");
+document.getElementById("s").innerHTML="*valid";
+document.getElementById("s").style.color="lime";
+}
+else
+{
+document.getElementById("s").innerHTML="*invalid";
+document.getElementById("s").style.color="red";
+}
+}
+</script>
+</head>
+<body style="padding:30px">
+Enter your phone number :<input type="number" id="a">
+<span id="s"></span>
+<br><br>
+<input type="button" value="submit" onclick="check()"
+</body>
+</html>

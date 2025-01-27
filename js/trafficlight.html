@@ -1,0 +1,70 @@
+<html>
+<head>
+<script>
+function swap()
+{
+var c1=document.getElementById("a").style.backgroundColor;
+var c2=document.getElementById("b").style.backgroundColor;
+var c3=document.getElementById("c").style.backgroundColor;
+document.getElementById("a").style.backgroundColor=c2;
+document.getElementById("b").style.backgroundColor=c3;
+document.getElementById("c").style.backgroundColor=c1;
+}
+</script>
+<style>
+#outer
+{
+height:430px;
+width:140px;
+margin:0px auto;
+background-color:lightgoldenrodyellow;
+border:1px solid;
+border-radius:10px;
+box-shadow:5px 15px 20px;
+}
+#a
+{
+height:100px;
+width:100px;
+margin-top:20px;
+margin-left:20px;
+border:1px solid;
+border-radius:50px;
+//background-color:red;
+}
+#b
+{
+height:100px;
+width:100px;
+margin-top:20px;
+margin-left:20px;
+border:1px solid;
+border-radius:50px;
+//background-color:lime;
+}
+#c
+{
+height:100px;
+width:100px;
+margin-top:20px;
+margin-left:20px;
+border:1px solid;
+border-radius:50px;
+//background-color:lime;
+}
+#inp
+{
+padding: 1px 33px;
+margin:20px;
+}
+</style onmouseover="swap()">
+</head>
+<body style="padding:30px">
+<div id="outer">
+<div id="a" style="background-color:red;"></div>
+<div id="b" Style="background-color:yellow;"></div>
+<div id="c" Style="background-color:lime;"></div>
+<input type="button" value="Swap" onclick="swap()" id="inp">
+</div>
+</body>
+</html>

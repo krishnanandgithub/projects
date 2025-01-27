@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function swap()
+{
+//alert("hii");
+var n1=document.getElementById("a").innerHTML;
+var n2=document.getElementById("b").innerHTML;
+var condition=window.confirm("Do you want to swap..??");
+if(condition==true)
+{
+//alert("ok");
+document.getElementById("a").innerHTML=n2;
+document.getElementById("b").innerHTML=n1;
+}
+else if("condition==false")
+{
+//alert("not ok");
+alert("You denied swaping..!!");
+}
+}
+</script>
+</head>
+<body>
+<h1 id="a" style="color:red">Krishnanand Mishra</h1>
+<br>
+<input type="button" value="Swap" onclick="swap()"
+<br>
+<h1 id="b" Style="color:lime">K. N. Mishra</h1>
+
+</body>
+</html>

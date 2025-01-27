@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+var arr=["slider3.jpg","sofa.jpg","slider3.jpg","sofa.jpg"];
+var i=0;
+function slider()
+{
+//alert("hii");
+var a=document.getElementById("image");
+a.style.backgroundImage="url('images/"+arr[i]+"')";
+i++;
+if(i==arr.length)
+{
+i=0;
+}
+window.setTimeout("slider()",1000);
+}
+</script>
+<style>
+#image
+{
+height:300px;
+width:1000px;
+margin:50px auto;
+}
+</style>
+</head>
+<body onload="slider()">
+<div id="image"></div>
+</body>
+</html>

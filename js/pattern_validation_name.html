@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function check()
+{
+var pname=/^[a-zA-Z ]{3,15}$/;
+var name=document.getElementById("a").value;
+if(!pname.test(name))
+{
+document.getElementById("s").innerHTML="invalid";
+document.getElementById("s").style.color="red";
+}
+else
+{
+document.getElementById("s").innerHTML="*valid";
+document.getElementById("s").style.color="lime";
+
+}
+}
+</script>
+</head>
+<body>
+Name :<input type="text" id="a">
+<span id="s"></span>
+<br><br>
+<input type="button" value="submit" onclick="check()">
+</body>
+</html>
